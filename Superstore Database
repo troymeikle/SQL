@@ -1,0 +1,22 @@
+--order items by price
+
+SELECT item_name,price
+FROM superstore
+ORDER BY price DESC;
+
+--average price of an item
+
+SELECT AVG(price)
+FROM superstore;
+
+--count number of items in kitchen supplies
+
+SELECT COUNT(category)
+FROM superstore
+WHERE category='Kitchen Supplies';
+
+--max price of furnishings
+
+SELECT MAX (price),category
+FROM superstore
+WHERE category='Furnishings';
